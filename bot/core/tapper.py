@@ -508,7 +508,7 @@ class Tapper:
 
                 for task in tasks_data:
                     task_id = task.get("id")
-                    logger.info(f"{tasks_id} is in progress .... ")
+                    logger.info(f"{task_id} is in progress .... ")
                     task_title = task.get("title", "Unknown")
                     task_type = task.get("type")
                     if "submission" in task:
