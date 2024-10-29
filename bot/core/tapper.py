@@ -505,9 +505,10 @@ class Tapper:
                     access_token_created_time = tm.time()
 
                 tasks_data = await self.get_tasks_list(http_client=http_client)
-                logger.info(f"{tasks_data}")
+
                 for task in tasks_data:
                     task_id = task.get("id")
+                    logger.info(f"{tasks_id} is in progress .... ")
                     task_title = task.get("title", "Unknown")
                     task_type = task.get("type")
                     if "submission" in task:
